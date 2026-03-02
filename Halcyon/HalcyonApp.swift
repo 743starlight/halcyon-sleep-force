@@ -10,6 +10,10 @@ struct HalcyonApp: App {
     /// アプリ全体の状態を保持する ViewModel（設定値・監視制御を一元管理）
     @StateObject private var appState = AppState()
 
+    init() {
+        UpdateChecker.checkOnLaunch()
+    }
+
     var body: some Scene {
         // MenuBarExtra: メニューバーにアイコンを配置し、クリックで popover を表示
         MenuBarExtra {

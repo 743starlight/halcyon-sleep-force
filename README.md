@@ -7,7 +7,7 @@
 🔗 **[https://halcyon-sleep-force.vercel.app/](https://halcyon-sleep-force.vercel.app/)**
 
 ![macOS 14 Sonoma 以降](https://img.shields.io/badge/macOS-14%20Sonoma%20以降-blue)
-![Swift](https://img.shields.io/badge/Swift-6-orange)
+![Swift](https://img.shields.io/badge/Swift-5.10-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
 ---

@@ -3,11 +3,11 @@
 // アプリ名・バージョン/ビルド番号・監視状態インジケーター・監視 ON/OFF トグルを表示する。
 //
 // レイアウト:
-//   左側: アプリ名 "Halcyon" + バージョン "vX.Y (build)" + 状態ドット + ステータステキスト
+//   左側: アプリ名 "Halcyon" + バージョン "vX.Y.Z (build)" + 状態ドット + ステータステキスト
 //   右側: 監視 ON/OFF のスイッチトグル
 //
 // バージョン表示:
-//   Info.plist の CFBundleShortVersionString からメジャー.マイナーのみ抽出
+//   Info.plist の CFBundleShortVersionString をそのまま表示
 //   CFBundleVersion をビルド番号として括弧内に表示
 
 import SwiftUI
@@ -22,9 +22,8 @@ struct HeaderView: View {
                 HStack(alignment: .firstTextBaseline, spacing: 4) {
                     Text("Halcyon")
                         .font(.headline)
-                    // CFBundleShortVersionString（例: "1.0.0"）からメジャー.マイナーのみ取得
-                    let version = (Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-")
-                        .components(separatedBy: ".").prefix(2).joined(separator: ".")
+                    // CFBundleShortVersionString（例: "1.0.1"）を取得
+                    let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
                     // CFBundleVersion はビルドごとに変わる5桁の数値（Unix時間の下5桁）
                     let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "-"
                     Text("v\(version) (\(build))")
