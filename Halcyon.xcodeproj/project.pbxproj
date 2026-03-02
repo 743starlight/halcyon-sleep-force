@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0302AD3B012BB2B5C74DE013 /* ActionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFE5BA58D939628C5A29DC /* ActionExecutor.swift */; };
+		0B2D49B93A6192A0A0EDB647 /* ActionChainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F240668E47499928262042 /* ActionChainView.swift */; };
+		10D3F05F9A0CAB1A6657DF91 /* TimelineBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62BC6702CBDE9F698D4CB3C /* TimelineBarView.swift */; };
+		117D05521298A70EB755B742 /* HalcyonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8FB837A53DF0345A3C59134 /* HalcyonApp.swift */; };
+		240398F2A142031DA60FA09F /* IdleMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C27583F67BEE8FA98CEEB5FB /* IdleMonitor.swift */; };
+		31A94A73A787474175CD02AB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1427DB08FBA93B8C7E54CBEE /* SettingsView.swift */; };
+		340975FD3542D8584261E9F3 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C174CE7334EA9AB734781F59 /* AppState.swift */; };
+		401E53788C1CB69E0E929160 /* ActionStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920D1C5B0755C77F2F12DF8A /* ActionStep.swift */; };
+		4C185C18C2B525C014C88A22 /* StepCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA497D9770B25545794ED2C /* StepCardView.swift */; };
+		69F84C2C1BCC33A3D6F80408 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20782B8754E047DD9ED484B /* FooterView.swift */; };
+		6B5BD5F2AC762B37A57C61C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F719D903DA7A07C61D2F1342 /* ContentView.swift */; };
+		8F31C0281B64EC1779A04089 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0E0E6FF337264C60FC01E2 /* Log.swift */; };
+		CBF4FC24C9D0FCB58B548570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E291B2F729B2E235C25E2FA /* Assets.xcassets */; };
+		F0863E9635AA42901E9019DF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8872F50EDE841973840B59F9 /* HeaderView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D0E0E6FF337264C60FC01E2 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		1427DB08FBA93B8C7E54CBEE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		4E291B2F729B2E235C25E2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		621AB68B3FFE6020ACED2F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		62B066E645CB0AFF9AB571ED /* Halcyon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Halcyon.entitlements; sourceTree = "<group>"; };
+		6CA497D9770B25545794ED2C /* StepCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCardView.swift; sourceTree = "<group>"; };
+		801B730437E22D07001C70CA /* Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8872F50EDE841973840B59F9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		920D1C5B0755C77F2F12DF8A /* ActionStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStep.swift; sourceTree = "<group>"; };
+		C174CE7334EA9AB734781F59 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		C27583F67BEE8FA98CEEB5FB /* IdleMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleMonitor.swift; sourceTree = "<group>"; };
+		D20782B8754E047DD9ED484B /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		E62BC6702CBDE9F698D4CB3C /* TimelineBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineBarView.swift; sourceTree = "<group>"; };
+		F4EFE5BA58D939628C5A29DC /* ActionExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionExecutor.swift; sourceTree = "<group>"; };
+		F6F240668E47499928262042 /* ActionChainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionChainView.swift; sourceTree = "<group>"; };
+		F719D903DA7A07C61D2F1342 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F8FB837A53DF0345A3C59134 /* HalcyonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HalcyonApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0E2319175AE927C164C27A80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F6F240668E47499928262042 /* ActionChainView.swift */,
+				F719D903DA7A07C61D2F1342 /* ContentView.swift */,
+				D20782B8754E047DD9ED484B /* FooterView.swift */,
+				8872F50EDE841973840B59F9 /* HeaderView.swift */,
+				1427DB08FBA93B8C7E54CBEE /* SettingsView.swift */,
+				6CA497D9770B25545794ED2C /* StepCardView.swift */,
+				E62BC6702CBDE9F698D4CB3C /* TimelineBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1073AAC6BE4C61E6C9332AEF /* Halcyon */ = {
+			isa = PBXGroup;
+			children = (
+				4E291B2F729B2E235C25E2FA /* Assets.xcassets */,
+				62B066E645CB0AFF9AB571ED /* Halcyon.entitlements */,
+				F8FB837A53DF0345A3C59134 /* HalcyonApp.swift */,
+				621AB68B3FFE6020ACED2F9D /* Info.plist */,
+				832351D7E03DEE76D1215CEF /* Models */,
+				FC74448183A402BAC36B9775 /* Services */,
+				2F5C6BE30C906B93AE0A6971 /* Utils */,
+				59016DB0315916841846854E /* ViewModels */,
+				0E2319175AE927C164C27A80 /* Views */,
+			);
+			path = Halcyon;
+			sourceTree = "<group>";
+		};
+		2F5C6BE30C906B93AE0A6971 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0D0E0E6FF337264C60FC01E2 /* Log.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		59016DB0315916841846854E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C174CE7334EA9AB734781F59 /* AppState.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		832351D7E03DEE76D1215CEF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				920D1C5B0755C77F2F12DF8A /* ActionStep.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8DF526E6F1D8C893A0B95FC8 = {
+			isa = PBXGroup;
+			children = (
+				1073AAC6BE4C61E6C9332AEF /* Halcyon */,
+				AE3A7F13B5DC89EB07A7B23C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE3A7F13B5DC89EB07A7B23C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				801B730437E22D07001C70CA /* Halcyon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC74448183A402BAC36B9775 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F4EFE5BA58D939628C5A29DC /* ActionExecutor.swift */,
+				C27583F67BEE8FA98CEEB5FB /* IdleMonitor.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F4F490D161E65373A7B2568 /* Halcyon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E330799CBF7E58716B70264 /* Build configuration list for PBXNativeTarget "Halcyon" */;
+			buildPhases = (
+				529C8C3CF47FF9D408B5CEEF /* Sources */,
+				CAF2714E50E0AB8358B6BE7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Halcyon;
+			packageProductDependencies = (
+			);
+			productName = Halcyon;
+			productReference = 801B730437E22D07001C70CA /* Halcyon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1433DF19597FF9553E0F73C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+			};
+			buildConfigurationList = 10B138A1510B82CE96EE2DDD /* Build configuration list for PBXProject "Halcyon" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 8DF526E6F1D8C893A0B95FC8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F4F490D161E65373A7B2568 /* Halcyon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAF2714E50E0AB8358B6BE7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBF4FC24C9D0FCB58B548570 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		529C8C3CF47FF9D408B5CEEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B2D49B93A6192A0A0EDB647 /* ActionChainView.swift in Sources */,
+				0302AD3B012BB2B5C74DE013 /* ActionExecutor.swift in Sources */,
+				401E53788C1CB69E0E929160 /* ActionStep.swift in Sources */,
+				340975FD3542D8584261E9F3 /* AppState.swift in Sources */,
+				6B5BD5F2AC762B37A57C61C4 /* ContentView.swift in Sources */,
+				69F84C2C1BCC33A3D6F80408 /* FooterView.swift in Sources */,
+				117D05521298A70EB755B742 /* HalcyonApp.swift in Sources */,
+				F0863E9635AA42901E9019DF /* HeaderView.swift in Sources */,
+				240398F2A142031DA60FA09F /* IdleMonitor.swift in Sources */,
+				8F31C0281B64EC1779A04089 /* Log.swift in Sources */,
+				31A94A73A787474175CD02AB /* SettingsView.swift in Sources */,
+				4C185C18C2B525C014C88A22 /* StepCardView.swift in Sources */,
+				10D3F05F9A0CAB1A6657DF91 /* TimelineBarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3A1D97D888EDD44B019C262B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		76CD04CC7C97CA641DE7A4BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Halcyon/Halcyon.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 38615;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = Halcyon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.743starlight.halcyon;
+				PRODUCT_NAME = Halcyon;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Release;
+		};
+		800C5E620D7D5062F3E42BD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Halcyon/Halcyon.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 38615;
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = Halcyon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.743starlight.halcyon;
+				PRODUCT_NAME = Halcyon;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.10;
+			};
+			name = Debug;
+		};
+		F09A3B99673B61079FA7633A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		10B138A1510B82CE96EE2DDD /* Build configuration list for PBXProject "Halcyon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A1D97D888EDD44B019C262B /* Debug */,
+				F09A3B99673B61079FA7633A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5E330799CBF7E58716B70264 /* Build configuration list for PBXNativeTarget "Halcyon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				800C5E620D7D5062F3E42BD7 /* Debug */,
+				76CD04CC7C97CA641DE7A4BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1433DF19597FF9553E0F73C /* Project object */;
+}
