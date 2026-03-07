@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		007AFCEDF41E7E4253307773 /* Syne-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6A4BA438615E56A25CB6ED3 /* Syne-Bold.ttf */; };
 		0302AD3B012BB2B5C74DE013 /* ActionExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EFE5BA58D939628C5A29DC /* ActionExecutor.swift */; };
 		0B2D49B93A6192A0A0EDB647 /* ActionChainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F240668E47499928262042 /* ActionChainView.swift */; };
 		10D3F05F9A0CAB1A6657DF91 /* TimelineBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E62BC6702CBDE9F698D4CB3C /* TimelineBarView.swift */; };
@@ -18,6 +19,7 @@
 		4C185C18C2B525C014C88A22 /* StepCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CA497D9770B25545794ED2C /* StepCardView.swift */; };
 		69F84C2C1BCC33A3D6F80408 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D20782B8754E047DD9ED484B /* FooterView.swift */; };
 		6B5BD5F2AC762B37A57C61C4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F719D903DA7A07C61D2F1342 /* ContentView.swift */; };
+		7CABCF7288752EFE28ED8516 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F3F50422AAC894F81466FD /* WelcomeView.swift */; };
 		8F31C0281B64EC1779A04089 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0E0E6FF337264C60FC01E2 /* Log.swift */; };
 		C2E4CF0676F03CDC1274B6F0 /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8817062D01E641F4A2FE89 /* UpdateChecker.swift */; };
 		CBF4FC24C9D0FCB58B548570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E291B2F729B2E235C25E2FA /* Assets.xcassets */; };
@@ -33,7 +35,9 @@
 		6CA497D9770B25545794ED2C /* StepCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCardView.swift; sourceTree = "<group>"; };
 		801B730437E22D07001C70CA /* Halcyon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Halcyon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8872F50EDE841973840B59F9 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		90F3F50422AAC894F81466FD /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		920D1C5B0755C77F2F12DF8A /* ActionStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionStep.swift; sourceTree = "<group>"; };
+		B6A4BA438615E56A25CB6ED3 /* Syne-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syne-Bold.ttf"; sourceTree = "<group>"; };
 		C174CE7334EA9AB734781F59 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		C27583F67BEE8FA98CEEB5FB /* IdleMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdleMonitor.swift; sourceTree = "<group>"; };
 		D20782B8754E047DD9ED484B /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 				1427DB08FBA93B8C7E54CBEE /* SettingsView.swift */,
 				6CA497D9770B25545794ED2C /* StepCardView.swift */,
 				E62BC6702CBDE9F698D4CB3C /* TimelineBarView.swift */,
+				90F3F50422AAC894F81466FD /* WelcomeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -68,6 +73,7 @@
 				F8FB837A53DF0345A3C59134 /* HalcyonApp.swift */,
 				621AB68B3FFE6020ACED2F9D /* Info.plist */,
 				832351D7E03DEE76D1215CEF /* Models */,
+				BBDF20FE1754A0D3D2436AAD /* Resources */,
 				FC74448183A402BAC36B9775 /* Services */,
 				2F5C6BE30C906B93AE0A6971 /* Utils */,
 				59016DB0315916841846854E /* ViewModels */,
@@ -108,12 +114,28 @@
 			);
 			sourceTree = "<group>";
 		};
+		9C3E6304D1C330407E667C63 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B6A4BA438615E56A25CB6ED3 /* Syne-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		AE3A7F13B5DC89EB07A7B23C /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				801B730437E22D07001C70CA /* Halcyon.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		BBDF20FE1754A0D3D2436AAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9C3E6304D1C330407E667C63 /* Fonts */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		FC74448183A402BAC36B9775 /* Services */ = {
@@ -155,9 +177,10 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 10B138A1510B82CE96EE2DDD /* Build configuration list for PBXProject "Halcyon" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -167,6 +190,7 @@
 			mainGroup = 8DF526E6F1D8C893A0B95FC8;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
+			productRefGroup = AE3A7F13B5DC89EB07A7B23C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -181,6 +205,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBF4FC24C9D0FCB58B548570 /* Assets.xcassets in Resources */,
+				007AFCEDF41E7E4253307773 /* Syne-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +230,7 @@
 				4C185C18C2B525C014C88A22 /* StepCardView.swift in Sources */,
 				10D3F05F9A0CAB1A6657DF91 /* TimelineBarView.swift in Sources */,
 				C2E4CF0676F03CDC1274B6F0 /* UpdateChecker.swift in Sources */,
+				7CABCF7288752EFE28ED8516 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Halcyon/Halcyon.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 38615;
+				CURRENT_PROJECT_VERSION = 72220;
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = Halcyon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -288,7 +314,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.743starlight.halcyon;
 				PRODUCT_NAME = Halcyon;
 				SDKROOT = macosx;
@@ -302,7 +328,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Halcyon/Halcyon.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 38615;
+				CURRENT_PROJECT_VERSION = 72220;
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = Halcyon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +336,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.743starlight.halcyon;
 				PRODUCT_NAME = Halcyon;
 				SDKROOT = macosx;

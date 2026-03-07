@@ -17,11 +17,11 @@ struct HeaderView: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            VStack(alignment: .leading, spacing: 2) {
+            VStack(alignment: .leading, spacing: 4) {
                 // アプリ名とバージョン/ビルド番号
-                HStack(alignment: .firstTextBaseline, spacing: 4) {
+                HStack(alignment: .firstTextBaseline, spacing: 6) {
                     Text("Halcyon")
-                        .font(.headline)
+                        .font(.custom("Syne-Bold", size: 14))
                     // CFBundleShortVersionString（例: "1.0.1"）を取得
                     let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "-"
                     // CFBundleVersion はビルドごとに変わる5桁の数値（Unix時間の下5桁）

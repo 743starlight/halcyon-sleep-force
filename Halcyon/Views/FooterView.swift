@@ -1,9 +1,9 @@
 // FooterView.swift
 // popover 下部のフッター領域。
-// 「設定について」リンクと「終了」ボタンを左右に配置する。
+// 「このアプリについて」リンクと「終了」ボタンを左右に配置する。
 //
 // レイアウト:
-//   左側: 歯車アイコン + 「設定について」 — タップでセットアップガイドをブラウザで開く
+//   左側: info アイコン + 「このアプリについて」 — タップでウェルカムウインドウを表示
 //   右側: 「終了」ボタン — アプリを完全に終了する（NSApplication.terminate）
 
 import SwiftUI
@@ -11,17 +11,11 @@ import SwiftUI
 struct FooterView: View {
     var body: some View {
         HStack {
-            // 設定の詳細説明ページ（セットアップガイド）をブラウザで開くリンク
+            // ウェルカムウインドウ（このアプリについて）を表示する
             Button {
-                if let url = URL(string: "https://halcyon-sleep-force.vercel.app/setup") {
-                    NSWorkspace.shared.open(url)
-                }
+                AppDelegate.showWelcomeWindow()
             } label: {
-                HStack(spacing: 4) {
-                    Image(systemName: "gearshape")
-                        .font(.caption)
-                    Text("設定について")
-                }
+                Text("このアプリについて")
             }
             .buttonStyle(.plain)
             .font(.caption)
@@ -38,6 +32,7 @@ struct FooterView: View {
             .foregroundStyle(.secondary)
         }
         .padding(.horizontal, 16)
-        .padding(.vertical, 8)
+        .padding(.top, 12)
+        .padding(.bottom, 8)
     }
 }
