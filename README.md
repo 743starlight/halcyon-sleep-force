@@ -2,7 +2,9 @@
 
 **スリープを妨げるアプリがあっても、Macを確実に眠らせる macOS メニューバーアプリ。**
 
-動画再生や周辺機器の接続によってスリープが妨げられてしまう問題を解決します。離席したら、あとは Halcyon にお任せください。
+スリープを妨げるアプリがあっても、離席したらMacを確実にスクリーンセーバー、画面オフ、スリープへ誘導。動画再生や周辺機器の接続によってスリープが妨げられてしまう問題を解決します。離席したら、あとは Halcyon にお任せください。
+
+![スクリーンショット](https://halcyon-sleep-force.vercel.app/github_catch.png)
 
 🔗 **[https://halcyon-sleep-force.vercel.app/](https://halcyon-sleep-force.vercel.app/)**
 
@@ -10,15 +12,11 @@
 ![Swift](https://img.shields.io/badge/Swift-5.10-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
----
-
 ## ダウンロード
 
 [**Releases**](../../releases) から最新版の `.zip` をダウンロードしてください。
 
 > **必要環境:** macOS 14 Sonoma 以降、管理者ユーザーアカウント
-
----
 
 ## 使い方
 
@@ -29,8 +27,6 @@
 
 映画や音楽を楽しむときはスイッチをOFFに。設定はそのまま保持されます。
 
----
-
 ## 機能
 
 - **3ステップのアクションチェーン** — スクリーンセーバー起動 → ディスプレイOFF → システムスリープを順次実行
@@ -39,15 +35,11 @@
 - **メニューバー常駐** — Dockに表示されずバックグラウンドで動作
 - **ログイン時に自動起動** — 設定からログイン項目への登録が可能
 
----
-
 ## Macの設定について
 
 Halcyon を正しく動作させるために、一部 macOS の設定変更が必要です。
 
 → **[Macの設定について](https://halcyon-sleep-force.vercel.app/setup)**
-
----
 
 ## ライセンス
 
