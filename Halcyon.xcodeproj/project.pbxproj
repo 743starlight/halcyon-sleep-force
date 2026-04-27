@@ -23,12 +23,14 @@
 		8F31C0281B64EC1779A04089 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0E0E6FF337264C60FC01E2 /* Log.swift */; };
 		C2E4CF0676F03CDC1274B6F0 /* UpdateChecker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8817062D01E641F4A2FE89 /* UpdateChecker.swift */; };
 		CBF4FC24C9D0FCB58B548570 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E291B2F729B2E235C25E2FA /* Assets.xcassets */; };
+		DDF65E5707E6CB229DECF8BB /* AppLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B601AC7D3538A7B1CBB4D8 /* AppLanguage.swift */; };
 		F0863E9635AA42901E9019DF /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8872F50EDE841973840B59F9 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0D0E0E6FF337264C60FC01E2 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		1427DB08FBA93B8C7E54CBEE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		35B601AC7D3538A7B1CBB4D8 /* AppLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLanguage.swift; sourceTree = "<group>"; };
 		4E291B2F729B2E235C25E2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		621AB68B3FFE6020ACED2F9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		62B066E645CB0AFF9AB571ED /* Halcyon.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Halcyon.entitlements; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				920D1C5B0755C77F2F12DF8A /* ActionStep.swift */,
+				35B601AC7D3538A7B1CBB4D8 /* AppLanguage.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				0B2D49B93A6192A0A0EDB647 /* ActionChainView.swift in Sources */,
 				0302AD3B012BB2B5C74DE013 /* ActionExecutor.swift in Sources */,
 				401E53788C1CB69E0E929160 /* ActionStep.swift in Sources */,
+				DDF65E5707E6CB229DECF8BB /* AppLanguage.swift in Sources */,
 				340975FD3542D8584261E9F3 /* AppState.swift in Sources */,
 				6B5BD5F2AC762B37A57C61C4 /* ContentView.swift in Sources */,
 				69F84C2C1BCC33A3D6F80408 /* FooterView.swift in Sources */,
@@ -306,7 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Halcyon/Halcyon.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 72220;
+				CURRENT_PROJECT_VERSION = 72226;
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = Halcyon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -314,7 +318,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.743starlight.halcyon;
 				PRODUCT_NAME = Halcyon;
 				SDKROOT = macosx;
@@ -328,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Halcyon/Halcyon.entitlements;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 72220;
+				CURRENT_PROJECT_VERSION = 72226;
 				ENABLE_APP_SANDBOX = NO;
 				INFOPLIST_FILE = Halcyon/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -336,7 +340,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.743starlight.halcyon;
 				PRODUCT_NAME = Halcyon;
 				SDKROOT = macosx;

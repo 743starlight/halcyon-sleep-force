@@ -12,6 +12,16 @@
 ![Swift](https://img.shields.io/badge/Swift-5.10-orange)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+## English
+
+Halcyon is a macOS menu bar app that helps your Mac go to sleep reliably, even when other apps try to keep it awake.
+
+- Website: **[halcyon-sleep-force.vercel.app/en](https://halcyon-sleep-force.vercel.app/en)**
+- Download the latest `.zip` from **[Releases](../../releases)**.
+- Move `Halcyon.app` to `/Applications`, launch it, and enable Halcyon from the menu bar.
+
+For setup details and screenshots, see the English website.
+
 ## ダウンロード
 
 [**Releases**](../../releases) から最新版の `.zip` をダウンロードしてください。
