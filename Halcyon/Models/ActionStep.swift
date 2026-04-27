@@ -24,9 +24,9 @@ enum ActionType: String, CaseIterable, Identifiable {
         let text: LocalizedText
         switch self {
         case .screenSaver:
-            text = LocalizedText(japanese: "スクリーンセーバー起動", english: "Start screen saver")
+            text = LocalizedText(japanese: "スクリーンセーバー起動", english: "Screen saver")
         case .displayOff:
-            text = LocalizedText(japanese: "ディスプレイOFF", english: "Turn display off")
+            text = LocalizedText(japanese: "ディスプレイOFF", english: "Display off")
         case .systemSleep:
             text = LocalizedText(japanese: "システムスリープ", english: "System sleep")
         }

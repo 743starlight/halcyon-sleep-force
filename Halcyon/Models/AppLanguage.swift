@@ -41,15 +41,15 @@ struct LocalizedText {
 /// アプリ共通の表示文言を集約する。
 /// 文言の追加・修正箇所をここに寄せ、各Viewに直書き文字列が増えないようにする。
 enum AppText {
-    static let monitoringActive = LocalizedText(japanese: "自動スリープ待機中", english: "Auto sleep ready")
+    static let monitoringActive = LocalizedText(japanese: "自動スリープ待機中", english: "Auto sleep is on")
     static let stopped = LocalizedText(japanese: "停止中", english: "Stopped")
     static let debugLog = LocalizedText(japanese: "デバッグログ", english: "Debug log")
     static let displayLanguage = LocalizedText(japanese: "表示言語", english: "Language")
     static let adminWarning = LocalizedText(japanese: "管理者権限がないため一部動作しない場合があります", english: "Some actions may not work without admin privileges")
     static let launchAtLogin = LocalizedText(japanese: "ログイン時に起動", english: "Launch at login")
-    static let launchAtLoginDescription = LocalizedText(japanese: "Macの起動時に自動で開始します", english: "Starts automatically when your Mac starts")
-    static let autoSleepStopped = LocalizedText(japanese: "自動スリープは停止中です", english: "Auto sleep is stopped")
-    static let noActionSelected = LocalizedText(japanese: "アクションが選択されていません", english: "No actions selected")
+    static let launchAtLoginDescription = LocalizedText(japanese: "Macの起動時に自動で開始します", english: "Starts automatically when you log in")
+    static let autoSleepStopped = LocalizedText(japanese: "自動スリープは停止中です", english: "Auto sleep is off")
+    static let noActionSelected = LocalizedText(japanese: "アクションが選択されていません", english: "No steps selected")
     static let afterIdle = LocalizedText(japanese: "アイドル後", english: "After idle")
     static let afterPreviousStep = LocalizedText(japanese: "前ステップから", english: "After previous step")
     static let aboutApp = LocalizedText(japanese: "このアプリについて", english: "About this app")
@@ -59,11 +59,11 @@ enum AppText {
     static let welcomeMenuBarDescription = LocalizedText(japanese: "Halcyon はメニューバーに常駐します。\n画面右上のアイコンをクリックして設定画面を開けます。", english: "Halcyon stays in the menu bar.\nClick the icon in the top-right to open settings.")
     static let welcomeStepsTitle = LocalizedText(japanese: "ステップごとに設定", english: "Configure each step")
     static let welcomeStepsDescription = LocalizedText(japanese: "スクリーンセーバー→ディスプレイOFF→スリープの各ステップを設定できます。", english: "Set each step: screen saver, display off, then sleep.")
-    static let welcomeSettingsTitle = LocalizedText(japanese: "設定を確認してください", english: "Check your settings")
-    static let welcomeSettingsDescription = LocalizedText(japanese: "スクリーンセーバー起動ステップを使う場合、macOS側の設定変更が必要です。", english: "Using the screen saver step requires a macOS settings change.")
+    static let welcomeSettingsTitle = LocalizedText(japanese: "設定を確認してください", english: "Check this setting")
+    static let welcomeSettingsDescription = LocalizedText(japanese: "スクリーンセーバー起動ステップを使う場合、macOS側の設定変更が必要です。", english: "If you use the screen saver step, you need to change one macOS setting.")
     static let learnMore = LocalizedText(japanese: "詳しくはこちら", english: "Learn more")
     static let close = LocalizedText(japanese: "閉じる", english: "Close")
-    static let welcomeFooter = LocalizedText(japanese: "初回起動時のみ表示されます。アプリ下部「このアプリについて」からいつでも確認できます", english: "Shown only on first launch. You can reopen it from “About this app” at the bottom of the app.")
+    static let welcomeFooter = LocalizedText(japanese: "初回起動時のみ表示されます。アプリ下部「このアプリについて」からいつでも確認できます", english: "Shown only on first launch. You can reopen it from About this app at the bottom of the app.")
     static let updateAvailable = LocalizedText(japanese: "新しいバージョンがあります", english: "A new version is available")
     static let download = LocalizedText(japanese: "ダウンロード", english: "Download")
     static let skipThisVersion = LocalizedText(japanese: "このバージョンをスキップ", english: "Skip this version")
@@ -75,7 +75,7 @@ enum AppText {
         case .japanese:
             return "\(actionName)まで合計 \(minutes)分"
         case .english:
-            return "\(minutes) min total until \(actionName)"
+            return "\(minutes) min until \(actionName)"
         }
     }
 
@@ -95,7 +95,7 @@ enum AppText {
         case .japanese:
             return "\(version) がリリースされています。ダウンロードページを開きますか？"
         case .english:
-            return "\(version) has been released. Open the download page?"
+            return "\(version) is available. Open the download page?"
         }
     }
 }
