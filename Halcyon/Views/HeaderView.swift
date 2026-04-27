@@ -36,7 +36,7 @@ struct HeaderView: View {
                     Circle()
                         .fill(appState.isMonitoringEnabled ? .green : .gray)
                         .frame(width: 8, height: 8)
-                    Text(appState.isMonitoringEnabled ? "自動スリープ待機中" : "停止中")
+                    Text((appState.isMonitoringEnabled ? AppText.monitoringActive : AppText.stopped).text(appState.language))
                         .font(.caption)
                         .foregroundStyle(.secondary)
                 }

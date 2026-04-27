@@ -26,17 +26,17 @@ struct TimelineBarView: View {
         Group {
             if !appState.isMonitoringEnabled {
                 // 監視が OFF の場合
-                Text("自動スリープは停止中です")
+                Text(AppText.autoSleepStopped.text(appState.language))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             } else if steps.isEmpty {
                 // 全ステップが無効の場合
-                Text("アクションが選択されていません")
+                Text(AppText.noActionSelected.text(appState.language))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             } else {
                 // 最後の有効ステップ名と合計時間を表示
-                Text("\(steps.last!.0.displayName)まで合計 \(total)分")
+                Text(AppText.totalUntil(actionName: steps.last!.0.displayName(language: appState.language), minutes: total, language: appState.language))
                     .font(.caption2)
                     .foregroundStyle(.secondary)
             }

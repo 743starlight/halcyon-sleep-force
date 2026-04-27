@@ -9,13 +9,15 @@
 import SwiftUI
 
 struct FooterView: View {
+    @ObservedObject var appState: AppState
+
     var body: some View {
         HStack {
             // ウェルカムウインドウ（このアプリについて）を表示する
             Button {
-                AppDelegate.showWelcomeWindow()
+                AppDelegate.showWelcomeWindow(language: appState.language)
             } label: {
-                Text("このアプリについて")
+                Text(AppText.aboutApp.text(appState.language))
             }
             .buttonStyle(.plain)
             .font(.caption)
@@ -24,7 +26,7 @@ struct FooterView: View {
             Spacer()
 
             // アプリを完全に終了する（メニューバーからも消える）
-            Button("終了") {
+            Button(AppText.quit.text(appState.language)) {
                 NSApplication.shared.terminate(nil)
             }
             .buttonStyle(.plain)

@@ -15,6 +15,10 @@ import ServiceManagement
 @MainActor
 final class AppState: ObservableObject {
 
+    /// 現在の表示言語。
+    /// デバッグUIから一時的に切り替えるだけなので、UserDefaults には保存しない。
+    @Published var language = AppLanguage.defaultForCurrentLocale
+
     /// デバッグログの出力切替（Option キー押下時のみ UI に表示される）
     /// @AppStorage で永続化し、アプリ再起動後も設定を保持する
     @AppStorage("debugLogging") var debugLogging = false

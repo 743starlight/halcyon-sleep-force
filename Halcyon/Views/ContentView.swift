@@ -49,14 +49,29 @@ struct ContentView: View {
 
             // デバッグログ切替（Option キーを押しながら popover を開いた場合のみ表示）
             if showDebug {
-                HStack {
-                    Text("デバッグログ")
-                        .font(.subheadline)
-                    Spacer()
-                    Toggle("", isOn: $appState.debugLogging)
-                        .toggleStyle(.switch)
-                        .controlSize(.mini)
-                        .labelsHidden()
+                VStack(spacing: 6) {
+                    HStack {
+                        Text(AppText.debugLog.text(appState.language))
+                            .font(.subheadline)
+                        Spacer()
+                        Toggle("", isOn: $appState.debugLogging)
+                            .toggleStyle(.switch)
+                            .controlSize(.mini)
+                            .labelsHidden()
+                    }
+
+                    HStack {
+                        Text(AppText.displayLanguage.text(appState.language))
+                            .font(.subheadline)
+                        Spacer()
+                        Picker("", selection: $appState.language) {
+                            ForEach(AppLanguage.allCases) { language in
+                                Text(language.label).tag(language)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                        .frame(width: 132)
+                    }
                 }
                 .padding(.horizontal, 16)
                 .padding(.top, 4)
@@ -68,7 +83,7 @@ struct ContentView: View {
                     Image(systemName: "exclamationmark.triangle.fill")
                         .foregroundStyle(.yellow)
                         .font(.caption)
-                    Text("管理者権限がないため一部動作しない場合があります")
+                    Text(AppText.adminWarning.text(appState.language))
                         .font(.caption2)
                         .foregroundStyle(.secondary)
                     Spacer()
@@ -78,7 +93,7 @@ struct ContentView: View {
             }
 
             // 設定リンク・アプリ終了ボタン
-            FooterView()
+            FooterView(appState: appState)
             .padding(.bottom, 2)
         }
         .frame(width: 320)

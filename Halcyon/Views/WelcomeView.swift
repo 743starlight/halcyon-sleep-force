@@ -6,6 +6,7 @@ import SwiftUI
 
 struct WelcomeView: View {
     @Environment(\.dismiss) private var dismiss
+    let language: AppLanguage
 
     var body: some View {
         VStack(spacing: 0) {
@@ -35,13 +36,13 @@ struct WelcomeView: View {
             VStack(alignment: .leading, spacing: 14) {
                 WelcomeRow(
                     icon: "menubar.arrow.up.rectangle",
-                    title: "メニューバーに常駐",
-                    description: "Halcyon はメニューバーに常駐します。\n画面右上のアイコンをクリックして設定画面を開けます。"
+                    title: AppText.welcomeMenuBarTitle.text(language),
+                    description: AppText.welcomeMenuBarDescription.text(language)
                 )
                 WelcomeRow(
                     icon: "slider.horizontal.3",
-                    title: "ステップごとに設定",
-                    description: "スクリーンセーバー → ディスプレイOFF → スリープの\n各ステップを個別に設定できます。"
+                    title: AppText.welcomeStepsTitle.text(language),
+                    description: AppText.welcomeStepsDescription.text(language)
                 )
             }
             .padding(.horizontal, 24)
@@ -52,22 +53,21 @@ struct WelcomeView: View {
             // ── スクリーンセーバー設定の案内 ──
             WelcomeRow(
                 icon: "exclamationmark.triangle",
-                title: "設定を確認してください",
-                description: "スクリーンセーバー起動ステップを使う場合、macOS側の設定変更が必要です。",
+                title: AppText.welcomeSettingsTitle.text(language),
+                description: AppText.welcomeSettingsDescription.text(language),
                 iconColor: .orange
             )
             .padding(.horizontal, 24)
             .padding(.top, 20)
-            .padding(.bottom, 4)
 
             // ── ボタン ──
-            VStack(spacing: 10) {
+            VStack(spacing: 6) {
                 Button {
                     if let url = URL(string: "https://halcyon-sleep-force.vercel.app/setup") {
                         NSWorkspace.shared.open(url)
                     }
                 } label: {
-                    Text("詳しくはこちら")
+                    Text(AppText.learnMore.text(language))
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.borderedProminent)
@@ -77,7 +77,7 @@ struct WelcomeView: View {
                 Button {
                     dismiss()
                 } label: {
-                    Text("はじめる")
+                    Text(AppText.close.text(language))
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.bordered)
@@ -85,16 +85,16 @@ struct WelcomeView: View {
             }
             .padding(.horizontal, 24)
             .padding(.top, 20)
-            .padding(.bottom, 12)
+            .padding(.bottom, 6)
 
-            Text("この画面は初回起動時のみ表示されます。アプリ下部「このアプリについて」からいつでも確認できます。")
+            Text(AppText.welcomeFooter.text(language))
                 .font(.caption2)
                 .foregroundStyle(.tertiary)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
                 .padding(.bottom, 16)
         }
-        .frame(width: 380)
+        .frame(width: 320)
     }
 }
 

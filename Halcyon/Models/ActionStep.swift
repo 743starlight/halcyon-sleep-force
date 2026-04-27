@@ -19,13 +19,18 @@ enum ActionType: String, CaseIterable, Identifiable {
     /// ForEach 等で使用する一意識別子（rawValue をそのまま利用）
     var id: String { rawValue }
 
-    /// UI に表示する日本語のアクション名
-    var displayName: String {
+    /// UI に表示するアクション名
+    func displayName(language: AppLanguage) -> String {
+        let text: LocalizedText
         switch self {
-        case .screenSaver: return "スクリーンセーバー起動"
-        case .displayOff: return "ディスプレイOFF"
-        case .systemSleep: return "システムスリープ"
+        case .screenSaver:
+            text = LocalizedText(japanese: "スクリーンセーバー起動", english: "Start screen saver")
+        case .displayOff:
+            text = LocalizedText(japanese: "ディスプレイOFF", english: "Turn display off")
+        case .systemSleep:
+            text = LocalizedText(japanese: "システムスリープ", english: "System sleep")
         }
+        return text.text(language)
     }
 
     /// SF Symbols のアイコン名（StepCardView で使用）

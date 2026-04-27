@@ -100,7 +100,7 @@ struct StepCardView: View {
                         .font(.system(size: 14))
                         .foregroundStyle(isEnabled ? .primary : .secondary)
 
-                    Text(action.displayName)
+                    Text(action.displayName(language: appState.language))
                         .font(.subheadline)
                         .foregroundStyle(isEnabled ? .primary : .secondary)
 
@@ -117,7 +117,7 @@ struct StepCardView: View {
                     VStack(spacing: 0) {
                         HStack {
                             // 先頭ステップは「アイドル後」、それ以降は「前ステップから」
-                            Text(isFirst ? "アイドル後" : "前ステップから")
+                            Text((isFirst ? AppText.afterIdle : AppText.afterPreviousStep).text(appState.language))
                                 .font(.caption)
                                 .foregroundStyle(.secondary)
 
@@ -132,9 +132,9 @@ struct StepCardView: View {
                                 }
                                 .buttonStyle(.plain)
 
-                                Text("\(appState.minutes(for: action))分")
+                                Text(AppText.minuteCount(appState.minutes(for: action), language: appState.language))
                                     .font(.caption.monospacedDigit())
-                                    .frame(minWidth: 28)
+                                    .frame(minWidth: 42)
 
                                 Button {
                                     minutes.wrappedValue += 1

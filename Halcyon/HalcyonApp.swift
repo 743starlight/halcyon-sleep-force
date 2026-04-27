@@ -15,15 +15,16 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     }
 
     /// AppKit で直接ウェルカムウインドウを生成・表示する
-    static func showWelcomeWindow() {
+    static func showWelcomeWindow(language: AppLanguage = AppLanguage.defaultForCurrentLocale) {
         // 既にウインドウが存在する場合は最前面に移動するだけ
-        for window in NSApp.windows where window.title == "Halcyon へようこそ" {
+        let titles = AppLanguage.allCases.map { AppText.welcomeTitle.text($0) }
+        for window in NSApp.windows where titles.contains(window.title) {
             NSApp.activate(ignoringOtherApps: true)
             window.makeKeyAndOrderFront(nil)
             return
         }
 
-        let hostingView = NSHostingView(rootView: WelcomeView())
+        let hostingView = NSHostingView(rootView: WelcomeView(language: language))
         hostingView.setFrameSize(hostingView.fittingSize)
 
         let window = NSWindow(
@@ -32,7 +33,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             backing: .buffered,
             defer: false
         )
-        window.title = "Halcyon へようこそ"
+        window.title = AppText.welcomeTitle.text(language)
         window.contentView = hostingView
         window.center()
         window.isReleasedWhenClosed = false

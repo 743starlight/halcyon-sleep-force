@@ -18,7 +18,7 @@ struct SettingsView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             HStack {
-                Text("ログイン時に起動")
+                Text(AppText.launchAtLogin.text(appState.language))
                     .font(.subheadline)
                 Spacer()
                 // SMAppService の登録状態を直接参照するため手動 Binding
@@ -33,7 +33,7 @@ struct SettingsView: View {
 
             // 自動起動が有効な場合に補足テキストを表示
             if appState.launchAtLogin {
-                Text("Macの起動時に自動で開始します")
+                Text(AppText.launchAtLoginDescription.text(appState.language))
                     .font(.caption)
                     .foregroundStyle(.secondary)
             }

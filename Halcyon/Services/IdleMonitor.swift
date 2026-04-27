@@ -140,7 +140,7 @@ final class IdleMonitor {
         }
 
         let (action, _) = activeSteps[chainStepIndex]
-        Log.debug("executing step \(chainStepIndex): \(action.displayName)")
+        Log.debug("executing step \(chainStepIndex): \(action.rawValue)")
         ActionExecutor.execute(action)
 
         let nextIndex = chainStepIndex + 1
