@@ -8,10 +8,15 @@ enum AppLanguage: String, CaseIterable, Identifiable {
 
     var id: String { rawValue }
 
-    /// macOS の地域設定から初期表示言語を決める。
-    /// 日本地域のみ日本語、それ以外は英語にして、判定できない環境でも英語へ倒す。
+    /// macOS の優先言語から初期表示言語を決める。
+    /// 優先言語が日本語なら日本語、それ以外は英語にして、判定できない環境でも英語へ倒す。
     static var defaultForCurrentLocale: AppLanguage {
-        Locale.current.region?.identifier == "JP" ? .japanese : .english
+        guard let preferredLanguage = Locale.preferredLanguages.first else {
+            return .english
+        }
+
+        let languageCode = Locale(identifier: preferredLanguage).language.languageCode?.identifier
+        return languageCode == "ja" ? .japanese : .english
     }
 
     /// デバッグUIの言語切替に表示する固定ラベル。

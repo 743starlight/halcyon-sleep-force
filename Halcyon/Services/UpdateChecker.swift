@@ -76,7 +76,7 @@ enum UpdateChecker {
 
     @MainActor
     private static func showUpdateAlert(version: String) {
-        // 更新通知はデバッグUIの一時切替ではなく、起動時点の地域設定に合わせる
+        // 更新通知はデバッグUIの一時切替ではなく、起動時点の優先言語に合わせる
         let language = AppLanguage.defaultForCurrentLocale
         // メニューバーアプリでもアラートが背面に隠れないよう、表示前にアプリを前面化する
         NSApp.activate(ignoringOtherApps: true)
